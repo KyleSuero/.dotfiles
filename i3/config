@@ -232,6 +232,9 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+#scrot
+bindsym --release F12 exec scrot -e 'mv $f ~/Pictures' 
+
 exec --no-startup-id xrdb -load ~/.Xresources
 
 exec_always compton -f
