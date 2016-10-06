@@ -248,5 +248,5 @@ exec_always --no-startup-id feh -z --bg-scale ~/Downloads/nasa-apod-backgrounds/
 exec --no-startup-id xrdb -load ~/.Xresources
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id compton -f
-exec_always --no-startup-id redshift-gtk -l 43.160615:-77.608795 -t 6500:5000 -b 1.0:0.8
+exec --no-startup-id redshift-gtk -l 43.160615:-77.608795 -t 6500:5000 -b 1.0:0.8
 
