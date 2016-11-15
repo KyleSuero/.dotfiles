@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'honza/vim-snippets'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -58,7 +59,24 @@ syntax enable
 "let g:airline_symbols.spell = 'Ꞩ'
 "let g:airline_symbols.notexists = '∄'
 "let g:airline_symbols.whitespace = 'Ξ'		 
-set number
+
+let g:javascript_plugin_jsdoc = 1
+
+let g:javascript_conceal_function       = "ƒ"
+let g:javascript_conceal_null           = "ø"
+let g:javascript_conceal_this           = "@"
+let g:javascript_conceal_return         = "⇚"
+let g:javascript_conceal_undefined      = "¿"
+let g:javascript_conceal_NaN            = "ℕ"
+let g:javascript_conceal_prototype      = "¶"
+let g:javascript_conceal_static         = "•"
+let g:javascript_conceal_super          = "Ω"
+let g:javascript_conceal_arrow_function = "⇒"
+
+set nowrap
+
+au FileType javascript set dictionary+=$HOME/.vim/dict/node.dict
+
 
 set laststatus=2
 
